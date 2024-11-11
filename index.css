@@ -1,0 +1,40 @@
+.actions {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 140px);
+    grid-template-rows: repeat(2, calc(140px / 2 * 3));
+}
+
+.card {
+    height: calc(140px / 2 * 3);
+    width: 140px;
+    position: relative;
+}
+
+.front-image {
+    width: 60px;
+    height: 60px;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.card .front {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    transform: rotateY(180deg);
+}
+
