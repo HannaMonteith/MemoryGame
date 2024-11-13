@@ -6,14 +6,15 @@
 .grid-container {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(6, 140px);
-    grid-template-rows: repeat(2, calc(140px / 2 * 3));
+    grid-template-columns: repeat(5, 140px);
+    grid-gap: 20px;
 }
 
 .card {
-    height: calc(140px / 2 * 3);
+    height: 140px;
     width: 140px;
     position: relative;
+    cursor: pointer;
 }
 
 .front-image {
